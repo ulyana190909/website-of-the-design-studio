@@ -13,8 +13,13 @@
     src: url('../fonts/YesevaOne-Regular.ttf');
 }
 
+html,
 body {
     margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow: auto;
 }
 
 .d-flex {
@@ -48,8 +53,6 @@ body {
     .h-133 {
         height: 133px;
     }
-
-    /*стили хэдер*/
 
     header {
         background-color: #131313;
@@ -104,12 +107,13 @@ body {
     }
 
     .section-1 {
-        background: url('../img/image\ 4.3.svg');
+        background: url('../img/image_4.3.svg');
         width: 100%;
         height: 707px;
         background-color: #131313;
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 100%;
     }
 
     .s-1 {
@@ -401,6 +405,25 @@ body {
         margin-right: auto;
         max-width: 247px;
         height: 67px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .types-repair span {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #181818;
+    }
+
+    .types-repair img {
+        width: 114px;
+        height: 28px;
     }
 
     .repair {
@@ -424,6 +447,7 @@ body {
         top: -127px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0px 68px 0 34px;
     }
 
     .description-name {
@@ -442,7 +466,6 @@ body {
         line-height: 25px;
         color: #959595;
         list-style-type: disc;
-        padding: 0px 68px 0 34px;
     }
 
     .price-repair-button {
@@ -452,6 +475,8 @@ body {
         height: 54px;
         border: none;
         margin-top: 10px;
+        position: relative;
+        left: -34px;
     }
 
     .price-repair-button span {
@@ -497,13 +522,6 @@ body {
         width: 231px;
     }
 
-    .check-box {
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
-        background-color: #E3B873;
-        border-radius: 1px;
-    }
 
     .f-name {
         font-size: 13px;
@@ -542,7 +560,7 @@ body {
 
     .s-6-left {
         width: 703px;
-        background-image: url(/img/image\ 6.1.png);
+        background-image: url('/img/image_6.1.png');
         background-repeat: no-repeat;
         background-size: 703px 645px;
         position: relative;
@@ -644,7 +662,7 @@ body {
     }
 
     .list-of-service {
-        width: 703px;
+        width: 600px;
         flex-direction: column;
         padding-top: 117px;
         padding-left: 230px;
@@ -653,8 +671,8 @@ body {
     }
 
     .list-of-service>img {
-        height: 70px;
-        margin-bottom: 70px;
+        height: 100px;
+        margin-bottom: 40px;
     }
 
     .piggy-bank {
@@ -679,7 +697,7 @@ body {
         width: 100%;
         height: 864px;
         margin: 250px auto 0;
-        background: url('../img/image\ 5.1.png');
+        background: url('../img/image_5.1.png');
         background-color: #131313;
         background-repeat: no-repeat;
         background-position: center;
@@ -986,7 +1004,7 @@ body {
         max-width: 1440px;
         height: 350px;
         margin: 0px auto;
-        background-image: url(../img/Group.png);
+        background-image: url("../img/Group.png");
         background-repeat: repeat;
         background-position: center;
     }
@@ -1002,7 +1020,7 @@ body {
         width: 100%;
         height: 954px;
         margin: 0 auto;
-        background-image: url(../img/image\ 7.2.jpg);
+        background-image: url("../img/image_7.2.jpg");
         background-repeat: no-repeat;
         background-size: 1440px 954px;
         background-position: center;
@@ -1032,6 +1050,7 @@ body {
     }
 
     .s-10-block span {
+        width: 589px;
         font-size: 20px;
         line-height: 28px;
         text-align: center;
@@ -1053,16 +1072,6 @@ body {
     }
 
     /* footer */
-
-    footer {
-        background-color: #131313;
-        color: white;
-        align-items: center;
-        font-family: 'Nunito Sans', sans-serif;
-        font-style: normal;
-        position: relative;
-        margin-bottom: 0;
-    }
 
     .input-1 {
         border: none;
@@ -1087,5 +1096,61 @@ body {
 
     #n1::-moz-placeholder {
         color: #363636;
+    }
+
+    footer {
+        background-color: #131313;
+        color: white;
+        align-items: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: normal;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .ch-b {
+        color: black;
+    }
+
+    label {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 163.68%;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .check-box {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .check-box+label {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .check-box+label::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #E3B873;
+        border-radius: 1px;
+        margin-right: 0.5em;
+        background-color: #E3B873;
+    }
+
+    .check-box:checked+label::before {
+        border: 1px solid #E3B873;
+        border-radius: 1px;
+        margin-right: 0.5em;
+        background-color: #E3B873;
+        background-image: url('../img/check.svg');
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
     }
 }

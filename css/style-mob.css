@@ -1,4 +1,13 @@
 @media all and (max-width: 1299px) {
+
+    html,
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        overflow: auto;
+    }
+
     .header-footer-menu {
         display: none;
     }
@@ -32,8 +41,9 @@
     }
 
     .width-content-1 {
-        max-width: 1300px;
         width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
         padding: 0 1%;
     }
 
@@ -52,7 +62,7 @@
     /*стили хэдер*/
 
     header {
-        padding-left: 8%;
+        padding-left: 2%;
         background-color: #131313;
         color: white;
         font-family: 'Nunito Sans', sans-serif;
@@ -63,7 +73,6 @@
 
     .header-logo {
         width: 50%;
-        min-width: 200px;
         color: #E3B873;
         align-items: center;
         font-size: 11px;
@@ -86,7 +95,7 @@
     }
 
     .section-1 {
-        background: url('../img/image\ 4.3.svg');
+        background: url('../img/image_4.3.svg');
         width: 100%;
         height: 476px;
         background-color: #131313;
@@ -131,7 +140,7 @@
     }
 
     .section-1-size {
-        max-width: 1300px;
+        max-width: 375px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -144,7 +153,7 @@
     }
 
     .section-1-text h1 {
-        max-width: 520px;
+        max-width: 375px;
         text-transform: uppercase;
         color: #FFFFFF;
         font-size: 23px;
@@ -152,8 +161,7 @@
     }
 
     .margin-l-r-a {
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
     }
 
     .s-1-color {
@@ -161,7 +169,7 @@
     }
 
     .section-1-text p {
-        max-width: 504px;
+        max-width: 375px;
         margin-bottom: 41px;
         font-size: 14px;
         line-height: 30px;
@@ -199,7 +207,7 @@
     }
 
     .s-2-part-1 {
-        max-width: 1300px;
+        max-width: 375px;
         margin: 0 auto;
         padding: 0 1%;
         flex-direction: column;
@@ -298,7 +306,7 @@
     }
 
     .s-3 {
-        max-width: 1300px;
+        max-width: 375px;
         margin: 0 auto;
     }
 
@@ -347,7 +355,7 @@
     .section-5 {
         margin: 58px auto 0;
         height: 2100px;
-        max-width: 1300px;
+        width: 100%;
     }
 
     .types-repair {
@@ -355,23 +363,50 @@
         margin-right: auto;
         max-width: 247px;
         height: 67px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .types-repair span {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #181818;
+    }
+
+    .types-repair img {
+        width: 114px;
+        height: 28px;
     }
 
     .repair {
         margin: 31px auto 0;
-        max-width: 1236px;
+        max-width: 375px;
         flex-direction: column;
     }
 
+    .repaire-block {
+        max-width: 375px;
+    }
+
+    .repaire-block img {
+        max-width: 100%;
+    }
+
     .repair>div {
-        max-width: 392px;
+        max-width: 375px;
         height: 421px;
         margin: 0 auto 227px;
     }
 
     .repaire-description {
         max-width: 330px;
-        height: 261px;
+        height: 286px;
         background: #FFFFFF;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         z-index: 1;
@@ -379,6 +414,7 @@
         top: -127px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0px 68px 0 34px;
     }
 
     .description-name {
@@ -397,7 +433,6 @@
         line-height: 25px;
         color: #959595;
         list-style-type: disc;
-        padding: 0px 68px 0 34px;
     }
 
     .price-repair-button {
@@ -407,6 +442,8 @@
         height: 54px;
         border: none;
         margin-top: 10px;
+        position: relative;
+        left: -34px;
     }
 
     .price-repair-button span {
@@ -425,7 +462,6 @@
     }
 
     .section-4 {
-        max-width: 1300px;
         margin: 0 auto;
         height: 252px;
         justify-content: space-between;
@@ -459,12 +495,6 @@
         width: 100%;
     }
 
-    .check-box {
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
-
-    }
 
     .f-name {
         font-size: 13px;
@@ -500,7 +530,7 @@
 
 
     .black-form {
-        max-width: 496px;
+        max-width: 375px;
         height: 469px;
         background-color: #131313;
         padding: 28px 49px 27px;
@@ -554,7 +584,7 @@
     }
 
     .line-3 {
-        width: 408px;
+        width: 375px;
         border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
@@ -588,20 +618,6 @@
         align-items: flex-end;
     }
 
-    .list-of-service {
-        width: 703px;
-        flex-direction: column;
-        padding-top: 117px;
-        padding-left: 230px;
-        justify-content: flex-start;
-        align-items: start;
-    }
-
-    .list-of-service>img {
-        height: 70px;
-        margin-bottom: 70px;
-    }
-
     .piggy-bank {
         justify-content: flex-start;
         align-items: center;
@@ -630,13 +646,13 @@
     .s-7-block {
         justify-content: space-between;
         flex-direction: column;
-        max-width: 1440px;
+        max-width: 375px;
         height: 100%;
         margin: 0 auto;
     }
 
     .s-7-left {
-        max-width: 587px;
+        max-width: 375px;
         height: 100%;
         flex-direction: column;
         margin: 0 auto;
@@ -680,7 +696,6 @@
         width: 340px;
         background-color: #131313;
         position: relative;
-        ;
         margin: 0 auto;
     }
 
@@ -716,7 +731,6 @@
 
     .s-9-line-2 {
         width: 100%;
-
         justify-content: flex-start;
     }
 
@@ -753,6 +767,10 @@
         height: 51px;
     }
 
+    img {
+        max-width: 375px;
+    }
+
     .submit span {
         font-family: 'Nunito Sans';
         font-style: normal;
@@ -765,7 +783,6 @@
     }
 
     .section-9 {
-        max-width: 1300px;
         width: 100%;
         margin: -120px auto 0;
         background-color: #131313;
@@ -869,5 +886,51 @@
 
     input::-moz-placeholder {
         color: white;
+    }
+
+    .check-box {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .check-box+label {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .check-box+label::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #E3B873;
+        border-radius: 1px;
+        margin-right: 0.5em;
+        background-color: #E3B873;
+    }
+
+    .ch-b {
+        color: white;
+    }
+
+    .check-box:checked+label::before {
+        border: 1px solid #E3B873;
+        border-radius: 1px;
+        margin-right: 0.5em;
+        background-color: #E3B873;
+        background-image: url('../img/check.svg');
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+    }
+
+    label {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 163.68%;
+        color: #FFFFFF;
+        cursor: pointer;
     }
 }
