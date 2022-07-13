@@ -438,7 +438,7 @@ body {
     }
 
     .repaire-description {
-        max-width: 330px;
+        max-width: 310px;
         height: 286px;
         background: #FFFFFF;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -447,7 +447,7 @@ body {
         top: -127px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0px 68px 0 34px;
+        padding-left: 34px;
     }
 
     .description-name {
