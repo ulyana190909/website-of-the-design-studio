@@ -404,15 +404,13 @@
     }
 
     .repaire-description {
-        max-width: 330px;
+        max-width: 230px;
         height: 286px;
         background: #FFFFFF;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         z-index: 1;
         position: relative;
-        top: -127px;
-        margin-left: auto;
-        margin-right: auto;
+        top: -170px;
         padding: 0px 68px 0 34px;
     }
 
@@ -795,6 +793,7 @@
         height: 554px;
         margin: 0 auto;
         height: 500px;
+        overflow-x: hidden;
     }
 
     .s-10-block {
