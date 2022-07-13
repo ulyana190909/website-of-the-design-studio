@@ -4,8 +4,6 @@
     body {
         max-width: 100%;
         margin: 0 auto;
-        overflow-x: hidden;
-        overflow: auto;
     }
 
     .header-footer-menu {
@@ -204,6 +202,7 @@
     .section-2 {
         height: 850px;
         background-color: #131313;
+        overflow-x: hidden;
     }
 
     .s-2-part-1 {
